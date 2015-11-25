@@ -1,0 +1,87 @@
+#search{
+  display: inline-table; 
+  width: 50%; 
+}
+
+.search_item{
+  display: inline;
+}
+
+.banner_logo img{
+  width: 90px;
+  height: 45px;
+}
+
+.banner_logo a{
+  margin: 0 2px 2px 0;
+  padding: 18px 0 18px 0;
+  width: 120px;
+  float: left;
+  text-align: center;
+  background: #FFF;
+}
+
+.banner_logo{
+  width: 950px;
+  height: 324px;
+  /*display: inline;*/
+}
+
+.banner_left{
+  width: 190px;
+  height: 330px;
+  float: left;
+  display: block;
+}
+
+.banner_right{
+  width: 190px;
+  height: 330px;
+  float: right;
+  /*display: block;*/
+}
+
+#myCarousel > .carousel-inner > .item > img,
+#myCarousel >.carousel-inner > .item > a > img {
+    /*width: 100%;*/
+    margin: auto;
+}
+
+#carousel_1 > .carousel-inner > .item > img,
+#carousel_1 > .carousel-inner > .item > a > img {
+  /*margin: left;*/
+  /*width: 100%;*/
+}
+
+.category > .carousel > .slide {
+  /*width: 100px;*/
+}
+
+.category{
+  float: left;
+  width: 190px;
+  height: 100%;
+}
+
+.main_banner{
+  float: left;
+}
+.other_banner{
+  float:left;
+}
+
+.other_banner > a {
+  border-left: 1px solid #E5E5E5;
+  border-bottom: 1px solid #E5E5E5;
+  display: block;
+  width: 199px
+}
+
+.full_height{
+  height: 1000px;
+}
+
+.header_bar{
+  background: #f2f2f2;
+  height: 25px;
+}
