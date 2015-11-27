@@ -258,12 +258,16 @@
 }
 #menu #fb-plugin a:hover{
   background: #f2f2f2;
+<<<<<<< HEAD
 }
 
 /* Menu Đăng ký */
 #menu #dang-ky .sub-menu{
    padding-left: 5px;
   width: 150px;
+=======
+  height: 25px;
+>>>>>>> 71f9da8920d853aba1f414608481acb80c9b19fd
 }
 
 /*Thông báo*/
@@ -387,7 +391,11 @@ height: 22px;
   background: #D2D7D3;
   display: block;
   height: 100%;
+<<<<<<< HEAD
   line-height: 35px;
+=======
+  padding-top: 3px;
+>>>>>>> 71f9da8920d853aba1f414608481acb80c9b19fd
 }
 
 #search div#btn_search{
@@ -416,6 +424,11 @@ height: 22px;
 
 #lien_he_quang_cao{  
   height: 100%;
+<<<<<<< HEAD
   padding-right: 20px;
   margin-left:  100px;
 }
+=======
+}
+
+>>>>>>> 71f9da8920d853aba1f414608481acb80c9b19fd
