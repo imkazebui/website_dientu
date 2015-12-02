@@ -486,7 +486,7 @@ a > .control > .control_prev {
 
 .top_estore{
   width: 1190px;
-  height: 255px;
+  height: 350px;
 }
 
 .top_estore > ul {
@@ -506,3 +506,6 @@ a > .control > .control_prev {
   height: 20px;
 }
 
+.wrapper{
+  height: 420px;
+}
