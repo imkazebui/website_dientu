@@ -1,14 +1,14 @@
 
-@import "./css/dropdow.css"
-.search_item{
-  display: inline;
-}
-
 * {
   margin: 0;
   padding: 0;
 }
 
+/*Header*/
+
+
+
+/*End header*/
 .banner_logo img{
   width: 90px;
   height: 45px;
@@ -90,348 +90,6 @@
 #container_header{
   width: 100%;
 }
-
-.header_bar{
-  background: #f2f2f2;
-  height: 35px;
-  width: 100%;
-  line-height: 35px;
-}
-
-.header_bar.header_right{
-  float: left;
-  width: 400px;
-}
-
-.header_bar.header_left{
-  float: left;
-  width: 300px;
-}
-
-.header_content {
-  margin-right: 15px;
-  font-size: 12px;
-
-}
-.header_content a img{
-  margin-right: 3px;
-
-}
-
-.header_content span{
-  font-family: Arial;
-  display: inline-block;
-  color: #3E3E3E;
-  margin-left: 5px;
-}
-
-.fa{
-  color: #1F3A93;
-}
-/*header menu*/
-#menu ul{
-  list-style-type: none;
-  overflow: hidden;
-}
-
-#menu ul li{
-  color: #f1f1f1;
-  display: inline-block;
-  
-}
-
-#menu ul li a{
-  color: #f1f1f1;
-  width: 100%;
-  height: 100%;
-  text-decoration: none;
-  display: block;
-}
-
-#menu ul li a:hover{
-  background: white;
-  color: #333;
-}
-
-#menu ul li > .sub-menu{
-  display: none;
-  position: absolute;
-  background: white;
-  overflow: hidden;
-  border: 1px solid #f1f1f1;
-  border-top: none;
-  z-index: 1;
-}
-
-#menu .sub-menu li {
-  margin-left: 0px
- display: block;
- width: 200px;
-}
-
-#menu .sub-menu li a{
-  display: block;
-  background: white;
-  color: black;
-}
-
-#menu .sub-menu li a{
-  display: block;
-  width: 100%;
-}
-
-#menu .sub-menu a:hover{
-  padding-left: 10px;
-  background: #1F3A93;
-  color:white;
-}
-
-#menu ul li:hover .sub-menu{
-  display: block;
-}
-
-.sub-menu li img{
-  float: left;
-}
-
-/* Menu ứng dụng*/
-#menu #ung-dung .sub-menu{
-  width: 250px;
-  height: 180px;
-}
-#menu #ung-dung p{
-  margin-top: 0px;
-  margin-left: 20px;
-  color: black;
-  font-size: 12px;
-  font-family: arial;
-  margin-bottom: 10px;
-}
-#menu #ung-dung .sub-menu table{
-  margin-top: 5px;
-  width: 100px;
-  height: auto;
-}
-#menu #ung-dung .sub-menu table td{
-  padding-left: 20px;
-}
-#menu #ung-dung .sub-menu table tr{
-  margin-top: 0px;
-  padding-left: 0px;
-}
-
-
-/* Menu Gian hàng bán */
-#menu #gian-hang-ban .sub-menu{
-  width: 200px;
-  padding-left: 5px;
-}
-
-/*Menu rao vặt*/
-#menu #rao-vat .sub-menu{
-  padding-left: 5px;
-  width: 200px;
-}
-
-/*Menu Hỏi đáp*/
-#menu #hoi-dap .sub-menu{
-  padding-left: 5px;
-  width: 200px;
-}
-
-/*Menu Thêm*/
-#menu #them .sub-menu{
-   padding-left: 5px;
-  width: 200px;
-}
-#menu #them .sub-menu a{
-  border-bottom: 1px solid #f1f1f1;
-}
-#menu #them .sub-menu a:hover{
-  color: blue;
-  background: white;
-}
-
-/*Plugin google, facebook header*/
-#menu #google-plugin a:hover{
-  background: #f2f2f2;
-}
-#menu #fb-plugin a:hover{
-  background: #f2f2f2;
-  height: 25px;
-}
-
-/*Thông báo*/
-#menu #thong-bao .sub-menu{
-  width: 400px;
-  padding-left: 5px;
-}
-#menu #thong-bao .sub-menu a{
-  border-bottom: 1px solid #f1f1f1;
-  display:inline-table;
-  width: 400px;
-  height: 30px;
-  margin: 2px;
-  line-height: 20px;
-}
-#menu #thong-bao .sub-menu span{
-  color: #ABB7B7;
-}
-#menu #thong-bao .sub-menu a:hover{
-   color: blue;
-  background: white;
-}
-#menu #thong-bao .sub-menu a:hover span{
-  color: #ABB7B7;
-}
-#menu #thong-bao .sub-menu #xem-tat-ca{
-  text-align: center;
-}
-
-/*Menu Hỗ trợ*/
-#menu #ho-tro .sub-menu{
-  width: 500px;
-  padding-left: 5px;
-}
-#menu #ho-tro .sub-menu li{
-   border-bottom: 1px solid #f1f1f1;
-  width: 500px;
-  margin: 2px;
-}
-#menu #ho-tro .sub-menu p{
-  color: black;
-  margin-bottom: 5px;
-  line-height: 20px;
-}
-#menu #ho-tro .sub-menu #other{
-  border-bottom: none;
-}
-#menu #ho-tro .sub-menu li#info{
-  background: #f1f1f1;
-  border-bottom: none;
-  margin:0;
-  padding: 0;
-  display: block;
-}
-#menu #ho-tro .sub-menu #info img{
-  width: 40px;
-  height: 40px;
-  line-height: 40px;
-  margin-top: 10px;
-}
-#menu #ho-tro .sub-menu li#info p{
-  font-size: 12px;
-}
-
-/*Menu Đăng nhập*/
-#menu #dang-nhap .sub-menu{
-  padding-left: 5px;
-  color: black;
-}
-#menu #dang-nhap .sub-menu p{
-  text-align: center;
-  color: black;
-}
-#menu #dang-nhap .sub-menu #text{
-  margin-top: 0px;
-  height: 20px;
-}
-#menu #dang-nhap .sub-menu button{
-  margin-left: 50px;
-}
-#menu #dang-nhap .sub-menu li{
-  margin-top: 5px;
-}
-#menu #dang-nhap .sub-menu a:hover{
-  color: blue;
-  background: white;
-}
-#menu #dang-nhap .sub-menu .row{
-  line-height: 15px;
-}
-
-.plugin{
-  width: 65px;
-  height: 22px;
-  
-}
-
-.plugingugo{
-  width: 50;
-height: 22px;
-}
-
-#search{
-    display: inline-table; 
-    width: 50%;
-    z-index: -1;
-
-}
-
-.logo{
-  margin-left: 20px;
-}
-
-#search .row{
-  height: 40px;
-  border: 3px solid #1F3A93;
-
-}
-
-#search div#product_search{
-  background: #D2D7D3;
-  display: block;
-  height: 100%;
-  padding-top: 3px;
-}
-
-#search div#btn_search{
-  background:#1F3A93;
-  height:100%;
-  line-height: 35px;
-}
-
-#search div#btn_search a{
-  background: #1F3A93;
-  border: none;
-  color: white;
-  line-height: 35px;
-}
-#search div#btn_search a:hover{
-  text-decoration: none;
-}
-
-#search_text{
-  
-  height: 34px;
-  width: 426px;
-  border:none;
-  margin:0px;
-}
-
-#lien_he_quang_cao{  
-  height: 100%;
-  padding-right: 20px;
-  margin-left:  100px;
-}
-
-/*#top_product{
-  width: 1190px;
-  height: 310px;
-  display: block;
-  overflow: hidden;
-  margin: 30px auto;
-}
-
-a > .control > .control_prev {
-  left: 3px;
-  width: 18px;
-  height: 30px;
-}
-
-#top_product > .control {
-  top: 160px;
-}*/
 
 #productCarousel{
   width: 1190px;
@@ -546,7 +204,7 @@ a > .control > .control_prev {
 }
 
 #mini_bar_menu i{
-  font-size: 1.8em;
+  font-size: 1.5em;
   margin-left: 10px;
   color: white;
 }
@@ -564,7 +222,7 @@ a > .control > .control_prev {
 #mini_bar_menu a p {
   text-align: center;
   color: white;
-  font-size: 13px;
+  font-size: 12px;
 }
 
 .minibar_top{
@@ -572,4 +230,31 @@ a > .control > .control_prev {
   bottom: 0;
 }
 
+#hide_chat{
+  background-color: #365db5;
+  border: 1px solid #2C498F;
+  border-radius: 5px 5px 0 0;
+  bottom: -1px;
+  box-shadow: 0 0 1px #fff inset;
+  height: 32px;
+  line-height: 32px;
+  padding:  0px 30px 0 10px;
+  position: fixed;
+  right: 42px;
+  z-index: 9999;
+  border-bottom: none;
+  font-weight: bold;
+  cursor: pointer;
+  min-width: 207px;
+  max-width: 320px;
+  white-space: nowrap;
+  font-family: arial;
+  font-size: 15px;
+  color: #fff;
+}
 
+#hide_chat i{
+  position: absolute;
+  right: 0;
+  margin: 7px 7px 0 0;
+}
