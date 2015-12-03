@@ -509,3 +509,67 @@ a > .control > .control_prev {
 .wrapper{
   height: 420px;
 }
+
+.vanchuyen{
+  width: 1190px;
+  height: 370px;
+}
+
+.vanchuyen > li {
+  width: 238px;
+  display: inline-block;
+  float: left;
+}
+
+.giayphep_contents{
+  height: 63px; 
+}
+
+#mini_menu_bar_right{
+  position: fixed;
+  right: 0;
+  top: 0;
+  height: 100%;
+  overflow: hidden;
+  z-index: 3;
+  background: #1B1B1B;
+}
+
+#mini_bar_menu{
+  float: left;
+  height: 100%;
+  margin-top: 120px;
+}
+
+#minibar_app i{
+  margin-left: 10px;
+}
+
+#mini_bar_menu i{
+  font-size: 1.8em;
+  margin-left: 10px;
+  color: white;
+}
+
+/*#mini_bar_content{
+  background: #494949;
+  color: #FFF;
+  margin-right: -235px;
+  float: left;
+  width: 5px;
+  height: 100%;
+  overflow: hidden;
+}*/
+
+#mini_bar_menu a p {
+  text-align: center;
+  color: white;
+  font-size: 13px;
+}
+
+.minibar_top{
+  position: absolute;
+  bottom: 0;
+}
+
+
