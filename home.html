@@ -6,49 +6,130 @@
 
   <meta charset="utf-8">
   <link rel="stylesheet" type="text/css" href="./css.css">
-  <link rel="stylesheet" type="text/css" href="./css/dropdow.css">
   <link rel="stylesheet" type="text/css" href="./bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="./font-awesome/css/font-awesome.min.css">
   <script src="./jquery/jquery.min.js"></script>
   <script type="text/javascript" src="./bootstrap/js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="./javascript/dropdown.js"></script>
 </head>
-<body data-spy="scroll" data-target="#myScrollspy" data-offset="20">
+<body>
   <div id="container_body">
     <!-- Header -->
     <div id="container_header">
-
+      <div class="header_bar">
+        <div class="container">
+          <div class="pull-left">
+            <a href="">Gian hàng bán</a>
+            <a href="">Rao vặt</a>
+            <a href="">Hỏi đáp</a>
+            <a href="">Thêm</a>
+          </div>
+          <div class="pull-right">
+            <a href=""><i class="fa fa-mobile">Ứng dụng</i></a>
+            <a href=""><i class="fa fa-globe">Thông báo</i></a>
+            <a href=""><i class="fa fa-question-cricle"></i>Hỗ trợ</a>
+            <a href=""><i class="fa fa-user-plus"></i>Đăng ký</a>
+            <a href=""><i class="fa fa-user"></i>Đăng nhập</a>
+          </div>
+        </div>
+      </div>
+      <div class="header_content ">
+        <div class="container">
+          <div class="pull-left">
+            <a href=""><img src="./images/logonhom/logo_tp2v.png"></a>
+          </div>
+          <div class="pull-right">
+            <a href=""><img src="./images/lienhe.png"></a>
+          </div>
+          <div class="header_search">
+            <div class="input-group" id="search_box">
+              <div class="input-group-btn">
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Sản phẩm
+                  <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a href="">Sản phẩm</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="">Hỏi đáp</a></li>
+                </ul>
+              </div>
+              <input type="text" class="form-control" placeholder="Tìm kiếm sản phẩm, thương hiệu bạn mong muốn..."> 
+              <span class="input-group-btn">
+                <button class="btn btn-default" type="button">Tìm kiếm</button>
+              </span>
+            </div>
+            <div class="support_search input-group">
+              <ul>
+                <li>Xu hướng tìm kiếm:</li>
+                <li><a href="">Iphone 6s</a></li>
+                <li><a href="">Samsung Galaxy</a></li>
+                <li><a href="">Sony Z5</a></li>
+                <li><a href="">Vaio</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <!-- End header -->
     <!-- Container content -->
     <div id="container_content">
-      <div id="menu_link">
+      <div id="menu_link" class="menu_link">
         <div class="container_width">
-          <a href="">Đặt hàng iPhone 6S chính hãng FPT</a>
-          <a href="">Mở gian hàng miễn phí</a>
+          <a href="" class="hot">Đặt hàng iPhone 6S chính hãng FPT</a>
+          <a href="" class="hot">Mở gian hàng miễn phí</a>
+          <a href="" class="hot">Giờ vàng giá 99 đồng</a>
         </div>
       </div>
+<!--       <div class="sidebar-nav-fixed">
+        <div class="well">
+          <ul class="nav">
+            <li class="nav-header">Sidebar</li>
+            <li class="active"><a href="">Link</a></li>
+            <li class=""><a href="">Link</a></li>
+            <li class=""><a href="">Link</a></li>
+            <li class=""><a href="">Link</a></li>
+            <li class=""><a href="">Link</a></li>
+          </ul>
+        </div>
+      </div> -->
       <div id="menu">
-      </div>
-
-      <div id="myCarousel" class="carousel slide" data-ride="carousel">
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-          <li data-target="#myCarousel" data-slide-to="1"></li>
-        </ol>
-
-        <!-- Wrapper for slides -->
-        <div class="carousel-inner" role="listbox">
-          <div class="item active">
-            <img src="./images/quang cao/computer.jpg" alt="Compter" width="810" height="480">
-          </div>
-
-          <div class="item">
-            <img src="./images/quang cao/nokia.jpg" alt="Nokia" width="810" height="480">
+        <div id="menu_list" class="container_width">
+          <div class="wrapper_menu">
+            <h2>Toàn bộ danh mục</h2>
+            <ul id="menu_home_root" class="menu_root">
+              <li><a href="">Điện thoại, viễn thông</a><i class="fa fa-caret-down"></i></li>
+              <li><a href="">Máy tính, linh kiện</a></li>
+              <li><a href="">Máy ảnh, máy quay</a></li>
+              <li><a href="">Linh tinh</a></li>
+            </ul>
           </div>
         </div>
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+          </ol>
+
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner" role="listbox">
+            <div class="item active">
+              <img src="./images/quang cao/computer.jpg" alt="Compter" width="810" height="480">
+            </div>
+
+            <div class="item">
+              <img src="./images/quang cao/nokia.jpg" alt="Nokia" width="810" height="480">
+            </div>
+          </div>
+        </div> 
+        <div class="small_banner">
+          <a href=""><img src="./images/new/nokia1110.png"></a>
+          <a href=""><img src="./images/new/landrover.png"></a>
+        </div>       
       </div>
+
+
 
       <!-- Nội dung chính -->
       <div class="container_width">
@@ -170,11 +251,11 @@
               <li><a href="">Máy tính bảng</a></li>
             </ul>
             <div id="carousel_1" class="carousel slide" data-ride="carousel">
-              <a href="#carousel_1" class="carousel-control left" data-slide="pre">
+              <a href="#carousel_1" class="carousel-control left" id="left" data-slide="pre">
                 <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
                 <span class="sr-only">Previous</span>
               </a>
-              <a href="#carousel_1" class="carousel-control right" data-slide="next">
+              <a href="#carousel_1" class="carousel-control right" id="right" data-slide="next">
                 <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
                 <span class="sr-only">Next</span>
               </a>
@@ -526,11 +607,11 @@
               <li><a href="">Máy tính bảng</a></li>
             </ul>
             <div id="carousel_1" class="carousel slide" data-ride="carousel">
-              <a href="#carousel_1" class="carousel-control left" data-slide="pre">
+              <a href="#carousel_1" class="carousel-control left" id="left" data-slide="pre">
                 <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
                 <span class="sr-only">Previous</span>
               </a>
-              <a href="#carousel_1" class="carousel-control right" data-slide="next">
+              <a href="#carousel_1" class="carousel-control right" id="right" data-slide="next">
                 <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
                 <span class="sr-only">Next</span>
               </a>
@@ -591,11 +672,11 @@
               <li><a href="">Máy tính bảng</a></li>
             </ul>
             <div id="carousel_1" class="carousel slide" data-ride="carousel">
-              <a href="#carousel_1" class="carousel-control left" data-slide="pre">
+              <a href="#carousel_1" class="carousel-control left" id="left" data-slide="pre">
                 <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
                 <span class="sr-only">Previous</span>
               </a>
-              <a href="#carousel_1" class="carousel-control right" data-slide="next">
+              <a href="#carousel_1" class="carousel-control right" id="right" data-slide="next">
                 <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
                 <span class="sr-only">Next</span>
               </a>
@@ -946,11 +1027,11 @@
         <li>
           <h4><a href="">Điện thoại viễn thông</a></h4>
           <div>
-            <a href="">Phụ kiện thiết bị, sửa chữa</a>
+            <a href="">Mobile</a>
             <br>
-            <a href="">Phụ kiện thiết bị, sửa chữa</a>
+            <a href="">Thiết bị viễn thông</a>
             <br>
-            <a href="">Phụ kiện thiết bị, sửa chữa</a>
+            <a href="">Dịch vụ viễn thông</a>
             <br>
             <a href="">Phụ kiện thiết bị, sửa chữa</a>
             <br>
@@ -1087,7 +1168,7 @@
       <!-- End hiển thị danh mục -->
       <!-- Gioi thieu ve don vi -->
       <div id="about">
-        <h3>Vatgia.com - Sàn giao dịch thương mại điện tử hàng đầu Việt Nam</h3>
+        <h3>TP2V.com - Sàn giao dịch thương mại điện tử hàng đầu Việt Nam</h3>
         Mua hàng trực tuyến mang lại sự tiện lợi, chủ động, lựa chọn đa dạng, với các dịch vụ hỗ trợ mua hàng, bán hàng, thanh toán an toàn, giao hàng chuyên nghiệp.
         <br>
         Với phương châm “Luôn đặt mình vào địa vị khách hàng và đối xử trên mong đợi của họ”, Vatgia.com không ngừng nỗ lực, cải tiến đáp ứng nhu cầu mua sắm cho người tiêu dùng.
@@ -1129,7 +1210,7 @@
               <a href="">Quy chế hoạt động</a> |
               <a href="">Chính sách bảo mật thông tin</a> 
             </div>
-            Công ty Cổ phần Vật Giá Việt Nam. Số GCNDT: 011032001615, cấp ngày 21/06/2012, nơi cấp: UBND thành phố Hà Nội
+            Công ty Cổ phần TP2V Việt Nam. Số GCNDT: 011032001615, cấp ngày 21/06/2012, nơi cấp: UBND thành phố Hà Nội
             <br>
             Trụ sở chính: Lê Đại Hành, Hai Bà Trưng, Hà Nội - Chi nhánh Hồ Chí Minh: Đường Lữ Gia, Phường 15, Quận 11, Hồ Chí Minh
           </div>
