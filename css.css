@@ -402,3 +402,15 @@
   min-height: 240px;
 }
 
+.affix{
+  top: 500px;
+}
+
+#myScrollspy{
+  margin-top: -500px;
+  position: fixed;
+  top: 50%;
+  width: 35px;
+  z-index: 2;
+}
+
