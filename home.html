@@ -11,7 +11,7 @@
   <script src="./jquery/jquery.min.js"></script>
   <script type="text/javascript" src="./bootstrap/js/bootstrap.min.js"></script>
 </head>
-<body data-spy="scroll" data-target="#myScrollspy" data-offset="350">
+<body data-spy="scroll" data-target="#myScrollspy" data-offset="15px">
   <div id="container_body">
     <!-- Header -->
     <div id="container_header">
@@ -24,9 +24,9 @@
             <a href="">Thêm</a>
           </div>
           <div class="pull-right">
-            <a href=""><i class="fa fa-mobile">Ứng dụng</i></a>
-            <a href=""><i class="fa fa-globe">Thông báo</i></a>
-            <a href=""><i class="fa fa-question-cricle"></i>Hỗ trợ</a>
+            <a href=""><i class="fa fa-mobile"></i>Ứng dụng</a>
+            <a href=""><i class="fa fa-globe"></i>Thông báo</a>
+            <a href=""><i class="fa fa-question-circle"></i>Hỗ trợ</a>
             <a href=""><i class="fa fa-user-plus"></i>Đăng ký</a>
             <a href=""><i class="fa fa-user"></i>Đăng nhập</a>
           </div>
@@ -43,7 +43,7 @@
           <div class="header_search">
             <div class="input-group" id="search_box">
               <div class="input-group-btn">
-                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <button type="button" class="btn btn-default dropdown-toggle" id="btn_product" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Sản phẩm
                   <span class="caret"></span>
                 </button>
@@ -53,9 +53,9 @@
                   <li><a href="">Hỏi đáp</a></li>
                 </ul>
               </div>
-              <input type="text" class="form-control" placeholder="Tìm kiếm sản phẩm, thương hiệu bạn mong muốn..."> 
+              <input type="text" class="form-control" id="input_search" placeholder="Tìm kiếm sản phẩm, thương hiệu bạn mong muốn..."> 
               <span class="input-group-btn">
-                <button class="btn btn-default" type="button">Tìm kiếm</button>
+                <button class="btn btn-default" id="btn_search" type="button">Tìm kiếm</button>
               </span>
             </div>
             <div class="support_search input-group">
@@ -73,7 +73,7 @@
     </div>
     <!-- End header -->
     <!-- Container content -->
-    <div id="container_content">
+    <div id="container_content" style="background: #F5F5F5">
       <div id="home_search_affix" class="home_search_affix affix-top">
         <div class="container_width">
           <div class="pull-left" style="width: 190px;">
@@ -124,7 +124,7 @@
             </ul>
           </div>
         </div>
-        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel" style="background: #d0d0d8;">
           <!-- Indicators -->
           <ol class="carousel-indicators">
             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -249,11 +249,11 @@
         <!-- Floor 1 -->
         <div id="section1" class="wrapper">    
           <div class="category">
-            <div class="title">
+            <div class="title" style="background-color: #f3ae6f; border-bottom: 1px solid #f3ae6f;">
               <span>1F</span>
               <span>Điện thoại</span>
             </div>
-            <div class="icon">
+            <div class="icon" style="background-color: #f3ae6f;">
               <a href="">Điện thoại</a>
               <a href="">Máy tính bảng</a>
             </div>
@@ -336,16 +336,53 @@
                   <div class="estore">27 gian hàng bán</div>
                   <div class="statistic">
                     <span>
-                      <i class="order"></i>
-                      "2"
+                      <i class="fa fa-comments"></i>
+                      2
                     </span>
                     <span>
-                      <i class="view"></i>
-                      "20.525"
+                      <i class="fa fa-eye"></i>
+                      20.525
                     </span>
                     <span>
-                      <i class="reply"></i>
-                      "250"
+                      <i class="fa fa-shopping-cart"></i>
+                      250
+                    </span>
+                  </div>
+                  <div class="more_content">
+                    <a href="" class="teaser">
+                      • Hãng sản xuất: Sony
+                      <br>
+                      • Hãng sản xuất: Sony
+                      <br>
+                      • Hãng sản xuất: Sony
+                      <br>
+                      • Hãng sản xuất: Sony
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="wrapper_product">
+                <div class="block no_picture_thumb">
+                  <div class="main_picture">
+                    <a href=""><img src="./images/products/mayanh.jpg"></a>
+                  </div>
+                  <div class="price">11.800.000d</div>
+                  <div class="name">
+                    <a href="">Sony Alpha A6000 (E 16-50mm F3.5-5.6 OSS) Lens Kit</a>
+                  </div>
+                  <div class="estore">27 gian hàng bán</div>
+                  <div class="statistic">
+                    <span>
+                      <i class="fa fa-comments"></i>
+                      2
+                    </span>
+                    <span>
+                      <i class="fa fa-eye"></i>
+                      20.525
+                    </span>
+                    <span>
+                      <i class="fa fa-shopping-cart"></i>
+                      250
                     </span>
                   </div>
                 </div>
@@ -362,42 +399,16 @@
                   <div class="estore">27 gian hàng bán</div>
                   <div class="statistic">
                     <span>
-                      <i class="order"></i>
-                      "2"
+                      <i class="fa fa-comments"></i>
+                      2
                     </span>
                     <span>
-                      <i class="view"></i>
-                      "20.525"
+                      <i class="fa fa-eye"></i>
+                      20.525
                     </span>
                     <span>
-                      <i class="reply"></i>
-                      "250"
-                    </span>
-                  </div>
-                </div>
-              </div>
-              <div class="wrapper_product">
-                <div class="block no_picture_thumb">
-                  <div class="main_picture">
-                    <a href=""><img src="./images/products/mayanh.jpg"></a>
-                  </div>
-                  <div class="price">11.800.000d</div>
-                  <div class="name">
-                    <a href="">Sony Alpha A6000 (E 16-50mm F3.5-5.6 OSS) Lens Kit</a>
-                  </div>
-                  <div class="estore">27 gian hàng bán</div>
-                  <div class="statistic">
-                    <span>
-                      <i class="order"></i>
-                      "2"
-                    </span>
-                    <span>
-                      <i class="view"></i>
-                      "20.525"
-                    </span>
-                    <span>
-                      <i class="reply"></i>
-                      "250"
+                      <i class="fa fa-shopping-cart"></i>
+                      250
                     </span>
                   </div>
                 </div>
@@ -414,16 +425,16 @@
                   <div class="estore">27 gian hàng bán</div>
                   <div class="statistic">
                     <span>
-                      <i class="order"></i>
-                      "2"
+                      <i class="fa fa-comments"></i>
+                      2
                     </span>
                     <span>
-                      <i class="view"></i>
-                      "20.525"
+                      <i class="fa fa-eye"></i>
+                      20.525
                     </span>
                     <span>
-                      <i class="reply"></i>
-                      "250"
+                      <i class="fa fa-shopping-cart"></i>
+                      250
                     </span>
                   </div>
                 </div>
@@ -440,16 +451,16 @@
                   <div class="estore">27 gian hàng bán</div>
                   <div class="statistic">
                     <span>
-                      <i class="order"></i>
-                      "2"
+                      <i class="fa fa-comments"></i>
+                      2
                     </span>
                     <span>
-                      <i class="view"></i>
-                      "20.525"
+                      <i class="fa fa-eye"></i>
+                      20.525
                     </span>
                     <span>
-                      <i class="reply"></i>
-                      "250"
+                      <i class="fa fa-shopping-cart"></i>
+                      250
                     </span>
                   </div>
                 </div>
@@ -468,42 +479,16 @@
                   <div class="estore">27 gian hàng bán</div>
                   <div class="statistic">
                     <span>
-                      <i class="order"></i>
-                      "2"
+                      <i class="fa fa-comments"></i>
+                      2
                     </span>
                     <span>
-                      <i class="view"></i>
-                      "20.525"
+                      <i class="fa fa-eye"></i>
+                      20.525
                     </span>
                     <span>
-                      <i class="reply"></i>
-                      "250"
-                    </span>
-                  </div>
-                </div>
-              </div>
-              <div class="wrapper_product">
-                <div class="block no_picture_thumb">
-                  <div class="main_picture">
-                    <a href=""><img src="./images/products/mayanh.jpg"></a>
-                  </div>
-                  <div class="price">11.800.000d</div>
-                  <div class="name">
-                    <a href="">Sony Alpha A6000 (E 16-50mm F3.5-5.6 OSS) Lens Kit</a>
-                  </div>
-                  <div class="estore">27 gian hàng bán</div>
-                  <div class="statistic">
-                    <span>
-                      <i class="order"></i>
-                      "2"
-                    </span>
-                    <span>
-                      <i class="view"></i>
-                      "20.525"
-                    </span>
-                    <span>
-                      <i class="reply"></i>
-                      "250"
+                      <i class="fa fa-shopping-cart"></i>
+                      250
                     </span>
                   </div>
                 </div>
@@ -520,42 +505,16 @@
                   <div class="estore">27 gian hàng bán</div>
                   <div class="statistic">
                     <span>
-                      <i class="order"></i>
-                      "2"
+                      <i class="fa fa-comments"></i>
+                      2
                     </span>
                     <span>
-                      <i class="view"></i>
-                      "20.525"
+                      <i class="fa fa-eye"></i>
+                      20.525
                     </span>
                     <span>
-                      <i class="reply"></i>
-                      "250"
-                    </span>
-                  </div>
-                </div>
-              </div>
-              <div class="wrapper_product">
-                <div class="block no_picture_thumb">
-                  <div class="main_picture">
-                    <a href=""><img src="./images/products/mayanh.jpg"></a>
-                  </div>
-                  <div class="price">11.800.000d</div>
-                  <div class="name">
-                    <a href="">Sony Alpha A6000 (E 16-50mm F3.5-5.6 OSS) Lens Kit</a>
-                  </div>
-                  <div class="estore">27 gian hàng bán</div>
-                  <div class="statistic">
-                    <span>
-                      <i class="order"></i>
-                      "2"
-                    </span>
-                    <span>
-                      <i class="view"></i>
-                      "20.525"
-                    </span>
-                    <span>
-                      <i class="reply"></i>
-                      "250"
+                      <i class="fa fa-shopping-cart"></i>
+                      250
                     </span>
                   </div>
                 </div>
@@ -572,16 +531,68 @@
                   <div class="estore">27 gian hàng bán</div>
                   <div class="statistic">
                     <span>
-                      <i class="order"></i>
-                      "2"
+                      <i class="fa fa-comments"></i>
+                      2
                     </span>
                     <span>
-                      <i class="view"></i>
-                      "20.525"
+                      <i class="fa fa-eye"></i>
+                      20.525
                     </span>
                     <span>
-                      <i class="reply"></i>
-                      "250"
+                      <i class="fa fa-shopping-cart"></i>
+                      250
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="wrapper_product">
+                <div class="block no_picture_thumb">
+                  <div class="main_picture">
+                    <a href=""><img src="./images/products/mayanh.jpg"></a>
+                  </div>
+                  <div class="price">11.800.000d</div>
+                  <div class="name">
+                    <a href="">Sony Alpha A6000 (E 16-50mm F3.5-5.6 OSS) Lens Kit</a>
+                  </div>
+                  <div class="estore">27 gian hàng bán</div>
+                  <div class="statistic">
+                    <span>
+                      <i class="fa fa-comments"></i>
+                      2
+                    </span>
+                    <span>
+                      <i class="fa fa-eye"></i>
+                      20.525
+                    </span>
+                    <span>
+                      <i class="fa fa-shopping-cart"></i>
+                      250
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="wrapper_product">
+                <div class="block no_picture_thumb">
+                  <div class="main_picture">
+                    <a href=""><img src="./images/products/mayanh.jpg"></a>
+                  </div>
+                  <div class="price">11.800.000d</div>
+                  <div class="name">
+                    <a href="">Sony Alpha A6000 (E 16-50mm F3.5-5.6 OSS) Lens Kit</a>
+                  </div>
+                  <div class="estore">27 gian hàng bán</div>
+                  <div class="statistic">
+                    <span>
+                      <i class="fa fa-comments"></i>
+                      2
+                    </span>
+                    <span>
+                      <i class="fa fa-eye"></i>
+                      20.525
+                    </span>
+                    <span>
+                      <i class="fa fa-shopping-cart"></i>
+                      250
                     </span>
                   </div>
                 </div>
@@ -740,7 +751,7 @@
             <li>
               <h4>Gian hàng nổi bật nhất</h4>
               <div>
-                <b class="no_1">1</b>
+                <b id="no_1">1</b>
                 <a href="">Bảo Tuyết Mobile - HỖ TRỢ TRẢ GÓP THỦ TỤC CHỈ CẦN 5' PHÚT</a>
                 <br>
                 <span>Đã tiêu: 1.436.600₫</span>
@@ -773,100 +784,100 @@
             <li>
               <h4>Tham gia nổi bật nhất</h4>
               <div>
-                <b class="no_1"></b>
-                <a href=""></a>
+                <b id="no_1">1</b>
+                <a href="">Bảo Tuyết Mobile - HỖ TRỢ TRẢ GÓP THỦ TỤC CHỈ CẦN 5' PHÚT</a>
                 <br>
-                <span></span>
+                <span>Đã tiêu: 1.436.600₫</span>
               </div>
               <div>
-                <b class="no_1"></b>
-                <a href=""></a>
+                <b class="no_1">1</b>
+                <a href="">Bảo Tuyết Mobile - HỖ TRỢ TRẢ GÓP THỦ TỤC CHỈ CẦN 5' PHÚT</a>
                 <br>
-                <span></span>
+                <span>Đã tiêu: 1.436.600₫</span>
               </div>
               <div>
-                <b class="no_1"></b>
-                <a href=""></a>
+                <b class="no_1">1</b>
+                <a href="">Bảo Tuyết Mobile - HỖ TRỢ TRẢ GÓP THỦ TỤC CHỈ CẦN 5' PHÚT</a>
                 <br>
-                <span></span>
+                <span>Đã tiêu: 1.436.600₫</span>
               </div>
               <div>
-                <b class="no_1"></b>
-                <a href=""></a>
+                <b class="no_1">1</b>
+                <a href="">Bảo Tuyết Mobile - HỖ TRỢ TRẢ GÓP THỦ TỤC CHỈ CẦN 5' PHÚT</a>
                 <br>
-                <span></span>
+                <span>Đã tiêu: 1.436.600₫</span>
               </div>
               <div>
-                <b class="no_1"></b>
-                <a href=""></a>
+                <b class="no_1">1</b>
+                <a href="">Bảo Tuyết Mobile - HỖ TRỢ TRẢ GÓP THỦ TỤC CHỈ CẦN 5' PHÚT</a>
                 <br>
-                <span></span>
+                <span>Đã tiêu: 1.436.600₫</span>
               </div>
             </li>
             <li>
               <h4>Giao dịch online thành công</h4>
               <div>
-                <b class="no_1"></b>
-                <a href=""></a>
+                <b id="no_1">1</b>
+                <a href="">Bảo Tuyết Mobile - HỖ TRỢ TRẢ GÓP THỦ TỤC CHỈ CẦN 5' PHÚT</a>
                 <br>
-                <span></span>
+                <span>Đã tiêu: 1.436.600₫</span>
               </div>
               <div>
-                <b class="no_1"></b>
-                <a href=""></a>
+                <b class="no_1">1</b>
+                <a href="">Bảo Tuyết Mobile - HỖ TRỢ TRẢ GÓP THỦ TỤC CHỈ CẦN 5' PHÚT</a>
                 <br>
-                <span></span>
+                <span>Đã tiêu: 1.436.600₫</span>
               </div>
               <div>
-                <b class="no_1"></b>
-                <a href=""></a>
+                <b class="no_1">1</b>
+                <a href="">Bảo Tuyết Mobile - HỖ TRỢ TRẢ GÓP THỦ TỤC CHỈ CẦN 5' PHÚT</a>
                 <br>
-                <span></span>
+                <span>Đã tiêu: 1.436.600₫</span>
               </div>
               <div>
-                <b class="no_1"></b>
-                <a href=""></a>
+                <b class="no_1">1</b>
+                <a href="">Bảo Tuyết Mobile - HỖ TRỢ TRẢ GÓP THỦ TỤC CHỈ CẦN 5' PHÚT</a>
                 <br>
-                <span></span>
+                <span>Đã tiêu: 1.436.600₫</span>
               </div>
               <div>
-                <b class="no_1"></b>
-                <a href=""></a>
+                <b class="no_1">1</b>
+                <a href="">Bảo Tuyết Mobile - HỖ TRỢ TRẢ GÓP THỦ TỤC CHỈ CẦN 5' PHÚT</a>
                 <br>
-                <span></span>
+                <span>Đã tiêu: 1.436.600₫</span>
               </div>
             </li>
             <li>
               <h4>Được xem nhiều nhất</h4>
               <div>
-                <b class="no_1"></b>
-                <a href=""></a>
+                <b id="no_1">1</b>
+                <a href="">Bảo Tuyết Mobile - HỖ TRỢ TRẢ GÓP THỦ TỤC CHỈ CẦN 5' PHÚT</a>
                 <br>
-                <span></span>
+                <span>Đã tiêu: 1.436.600₫</span>
               </div>
               <div>
-                <b class="no_1"></b>
-                <a href=""></a>
+                <b class="no_1">1</b>
+                <a href="">Bảo Tuyết Mobile - HỖ TRỢ TRẢ GÓP THỦ TỤC CHỈ CẦN 5' PHÚT</a>
                 <br>
-                <span></span>
+                <span>Đã tiêu: 1.436.600₫</span>
               </div>
               <div>
-                <b class="no_1"></b>
-                <a href=""></a>
+                <b class="no_1">1</b>
+                <a href="">Bảo Tuyết Mobile - HỖ TRỢ TRẢ GÓP THỦ TỤC CHỈ CẦN 5' PHÚT</a>
                 <br>
-                <span></span>
+                <span>Đã tiêu: 1.436.600₫</span>
               </div>
               <div>
-                <b class="no_1"></b>
-                <a href=""></a>
+                <b class="no_1">1</b>
+                <a href="">Bảo Tuyết Mobile - HỖ TRỢ TRẢ GÓP THỦ TỤC CHỈ CẦN 5' PHÚT</a>
                 <br>
-                <span></span>
+                <span>Đã tiêu: 1.436.600₫</span>
               </div>
               <div>
-                <b class="no_1"></b>
-                <a href=""></a>
+                <b class="no_1">1</b>
+                <a href="">Bảo Tuyết Mobile - HỖ TRỢ TRẢ GÓP THỦ TỤC CHỈ CẦN 5' PHÚT</a>
                 <br>
-                <span></span>
+                <span>Đã tiêu: 1.436.600₫</span>
               </div>
             </li>
           </ul>
