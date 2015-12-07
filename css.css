@@ -283,6 +283,9 @@
   width: 33%;
 }
 
+/*#fix_quangcao{
+  margin: auto;
+}*/
 
 .top_estore{
   width: 1190px;
@@ -510,6 +513,10 @@
   margin-top: 20px;
 }
 
+#fix_header{
+  margin: 0 auto;
+}
+
 .container_width{
   margin: 0 auto;
   position: relative;
@@ -558,10 +565,6 @@
   margin-left: 2px;
 }
 
-.small
-/*#section3{
-  margin-top: 30px;
-}*/
 .menu_root{
   background: #FFF;
   float: left;
