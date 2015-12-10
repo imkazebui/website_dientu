@@ -31,8 +31,39 @@ body a{
   border-bottom: 1px solid #E5E5E5;
   height: 26px;
   line-height: 26px;
-  white-space: nowrap; 
-  
+  white-space: nowrap;
+  /* position: absolute; */
+  /* z-index: 10; */
+}
+
+.header_bar li{
+  list-style: none;
+  display: inline-block;
+  position: relative;
+}
+
+.dropdown_ul li:hover{
+  background: #FFF;
+}
+
+.dropdown_login li{
+  display: block;
+  position: relative;
+}
+.fb{
+  background-image: url(./images/login_fb.png);
+  display: block;
+  width: 220px;
+  height: 35px;
+  z-index: 999;
+}
+
+.gg{
+  background-image: url(./images/login_gg.png);
+  display: block;
+  width: 220px;
+  height: 35px;
+  z-index: 999;
 }
 
 .header_bar a{
@@ -41,16 +72,35 @@ body a{
   color: #999;
   float: left;
   padding: 0 9px;
+  display: block;
   position: relative;
+  font-size: 13px;
 }
 
 .header_bar i{
   padding-right: 3px;
   color: blue;
+  font-size: 15px;
+}
+
+.dropdown_login{
+  width: 244px;
+  height: 280px;
+  background: #FFF;
+  /* display: none; */
+  position: absolute;
+  z-index: 999;
+  right: 0;
+  margin-top: 26px;
+  border: 1px solid #E5E5E5;
+  border-top: none; 
+  
 }
 
 .header_content{
   margin-top: 20px;
+  position: relative;
+  z-index: 2;
 }
 
 #btn_search{
@@ -161,6 +211,7 @@ body a{
 
 #container_header{
   width: 100%;
+  position: relative;
 }
 
 #productCarousel{
@@ -286,6 +337,38 @@ body a{
   overflow: hidden;
   position: relative;
   text-transform: uppercase;
+}
+
+.login_fb{
+  background-image: url(login_fb.png);
+  width: 220px;
+  height: 35px;
+}
+.more_content{
+  color: #333;
+  height: 210px;
+  line-height: 21px;
+  padding: 4px 10px 0 !important;
+  top: 0;
+  margin-top: 0px;
+  background: rgba(255, 255, 255, .95);
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  right: 0;
+  visibility: hidden;
+  z-index: 1;
+}
+
+.header_login{
+  width: 244px;
+  height: 280px;
+  margin-left: 223px;
+  margin-top: 26px;
+  visibility: visible;
+  opacity: 1;
+  display: block;
+  z-index: 2;
 }
 
 .wrapper_product:hover .more_content{
@@ -456,21 +539,6 @@ body a{
   height: 210px;
 }
 
-.more_content{
-  color: #333;
-  height: 210px;
-  line-height: 21px;
-  padding: 4px 10px 0 !important;
-  top: 0;
-  margin-top: 0px;
-  background: rgba(255, 255, 255, .95);
-  left: 0;
-  opacity: 0;
-  position: absolute;
-  right: 0;
-  visibility: hidden;
-  z-index: 1;
-}
 
 .block{
   background: #FFF;
@@ -683,6 +751,7 @@ width: 100%;
 
 #fix_header{
   margin: 0 auto;
+  height: 240px;
 }
 
 .container_width{
@@ -691,6 +760,7 @@ width: 100%;
   width: 1190px;
   overflow: hidden;
   /* margin-top: 30px; */
+  /* z-index: 2; */
 }
 
 .hot{
