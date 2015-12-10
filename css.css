@@ -30,7 +30,7 @@ body a{
   background: #F2F2F2;
   border-bottom: 1px solid #E5E5E5;
   height: 26px;
-  line-height: 26px;
+  /* line-height: 26px; */
   white-space: nowrap;
   /* position: absolute; */
   /* z-index: 10; */
@@ -46,9 +46,17 @@ body a{
   background: #FFF;
 }
 
+.dropdown_ul li:hover .dropdown_login{
+  display: block;
+}
+
 .dropdown_login li{
   display: block;
   position: relative;
+  /* width: 277px; */
+  height: 40px;
+  /* margin-left: 37px; */
+  margin: 4px;
 }
 .fb{
   background-image: url(./images/login_fb.png);
@@ -71,10 +79,11 @@ body a{
   border-width: 0 1px;
   color: #999;
   float: left;
-  padding: 0 9px;
+  padding: 0 2px;
   display: block;
   position: relative;
   font-size: 13px;
+  margin: 4px;
 }
 
 .header_bar i{
@@ -87,14 +96,13 @@ body a{
   width: 244px;
   height: 280px;
   background: #FFF;
-  /* display: none; */
+  display: none;
   position: absolute;
   z-index: 999;
   right: 0;
   margin-top: 26px;
   border: 1px solid #E5E5E5;
-  border-top: none; 
-  
+  border-top: none;
 }
 
 .header_content{
@@ -751,7 +759,7 @@ width: 100%;
 
 #fix_header{
   margin: 0 auto;
-  height: 240px;
+  height: 305px;
 }
 
 .container_width{
